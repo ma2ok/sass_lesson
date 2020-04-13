@@ -1,3 +1,8 @@
+.label {
+  font-size: 12px;
+  border-radius: 10px;
+}
+
 .grid {
   float: left;
   width: 85px;
