@@ -1,15 +1,7 @@
 // 関数
 
-$totalWidth: 940px;
-$columnCount: 10;
-
-@function getColumnWidth($width, $count) {
-    // $columnWidthを計算
-    $padding: 10px;
-    $columnWidth: floor(($width - ($padding * ($count - 1))) / $count);
-    @debug $columnWidth;
-    @return $columnWidth;
-}
+@import "settings";
+@import "functions";
 
 .grid {
     float: left;
