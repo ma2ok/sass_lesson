@@ -7,3 +7,36 @@
     float: left;
     width: getColumnWidth($totalWidth, $columnCount);
 }
+
+// mixin
+
+@mixin round($radius:4px) {
+  border-radius: $radius;
+}
+
+.label {
+  font-size: 12px;
+  @include round(10px);
+}
+
+// @extend (継承)
+
+// .errorMsg
+// .warningMsg
+
+.msg {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  color: white;
+}
+
+.errorMsg {
+  @extend .msg;
+  background: red;
+}
+
+.warningMsg {
+  @extend .msg;
+  background: orange;
+}

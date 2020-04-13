@@ -1,11 +1,26 @@
+.grid {
+  float: left;
+  width: 85px;
+}
+
 .label {
   font-size: 12px;
   border-radius: 10px;
 }
 
-.grid {
-  float: left;
-  width: 85px;
+.msg, .errorMsg, .warningMsg {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  color: white;
+}
+
+.errorMsg {
+  background: red;
+}
+
+.warningMsg {
+  background: orange;
 }
 
 /*# sourceMappingURL=main.css.map */

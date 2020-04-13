@@ -5,12 +5,3 @@
   @debug $columnWidth;
   @return $columnWidth;
 }
-
-@mixin round($radius:4px) {
-  border-radius: $radius;
-}
-
-.label {
-  font-size: 12px;
-  @include round(10px);
-}
