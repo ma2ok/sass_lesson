@@ -1,13 +1,6 @@
-.cat-icon {
-  background: url("cat.png");
-}
-
-.dog-icon {
-  background: url("dog.png");
-}
-
-.tiger-icon {
-  background: url("tiger.png");
+.grid {
+  float: left;
+  width: 85px;
 }
 
 /*# sourceMappingURL=main.css.map */

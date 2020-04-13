@@ -1,7 +1,17 @@
-// リスト（似たようなデータをまとめて管理）
+// 関数
 
-// $animals: cat, dog, tiger;
+$totalWidth: 940px;
+$columnCount: 10;
 
-@each $animal in cat, dog, tiger {
-  .#{$animal}-icon { background: url("#{$animal}.png"); }
+@function getColumnWidth($width, $count) {
+    // $columnWidthを計算
+    $padding: 10px;
+    $columnWidth: floor(($width - ($padding * ($count - 1))) / $count);
+    @debug $columnWidth;
+    @return $columnWidth;
+}
+
+.grid {
+    float: left;
+    width: getColumnWidth($totalWidth, $columnCount);
 }
