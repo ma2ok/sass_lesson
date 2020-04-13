@@ -1,11 +1,9 @@
 #main {
   width: 90%;
+  background: url("../img/bg.png");
 }
 #main p {
-  font-size: 14px;
-}
-#main p .sub {
-  font-size: 12px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
