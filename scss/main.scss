@@ -1,15 +1,7 @@
-// ループ
-// @for
-// @while
+// リスト（似たようなデータをまとめて管理）
 
-// .fs10 { font-size: 10px; }
+// $animals: cat, dog, tiger;
 
-@for $i from 10 through 14 {
-  .fs#{$i} { font-size: #{$i}px; }
-}
-
-$i: 10;
-@while $i <= 14 {
-  .fs#{$i} { font-size: #{$i}px; }
-  $i: $i + 1;
+@each $animal in cat, dog, tiger {
+  .#{$animal}-icon { background: url("#{$animal}.png"); }
 }
